@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_activity"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_foodDetailFragment"
+            app:destination="@id/foodDetailFragment"
+            app:enterAnim="@anim/comes_from_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_listOrdersFragment"
+            app:destination="@id/listOrdersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_pastOrderFragment"
+            app:destination="@id/pastOrderFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_creditCardsFragment"
+            app:destination="@id/creditCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.SupportFragment"
+        android:label="fragment_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/foodDetailFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.FoodDetailFragment"
+        android:label="FoodDetailFragment"
+        tools:layout="@layout/fragment_food_detail">
+        <argument
+            android:name="food"
+            app:argType="com.yudistudios.foodland.models.Food" />
+    </fragment>
+    <fragment
+        android:id="@+id/listOrdersFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.ListOrdersFragment"
+        android:label="ListOrdersFragment"
+        tools:layout="@layout/fragment_list_orders">
+        <action
+            android:id="@+id/action_listOrdersFragment_to_activeOrderFragment"
+            app:destination="@id/activeOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activeOrderFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.ActiveOrderFragment"
+        android:label="ActiveOrderFragment"
+        tools:layout="@layout/fragment_active_order">
+        <argument
+            android:name="order"
+            app:argType="com.yudistudios.foodland.models.Order" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.ConfirmBasketFragment"
+        android:label="BasketFragment"
+        tools:layout="@layout/fragment_confirm_basket">
+        <action
+            android:id="@+id/action_basketFragment_to_payFragment"
+            app:destination="@id/payFragment" />
+        <action
+            android:id="@+id/action_basketFragment_to_addressesFragment"
+            app:destination="@id/addressesFragment" />
+        <action
+            android:id="@+id/action_basketFragment_to_creditCardsFragment"
+            app:destination="@id/creditCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.PayFragment"
+        android:label="PayFragment"
+        tools:layout="@layout/fragment_pay"/>
+    <fragment
+        android:id="@+id/pastOrderFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.PastOrderFragment"
+        android:label="fragment_past_order"
+        tools:layout="@layout/fragment_past_order" />
+    <fragment
+        android:id="@+id/addressesFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.AddressesFragment"
+        android:label="AddressesFragment"
+        tools:layout="@layout/fragment_addresses">
+        <action
+            android:id="@+id/action_addressesFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.AddAddressFragment"
+        android:label="fragment_add_address"
+        tools:layout="@layout/fragment_add_address" />
+    <fragment
+        android:id="@+id/creditCardsFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.CreditCardsFragment"
+        android:label="fragment_credit_cards"
+        tools:layout="@layout/fragment_credit_cards" >
+        <action
+            android:id="@+id/action_creditCardsFragment_to_addCreditCardFragment"
+            app:destination="@id/addCreditCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCreditCardFragment"
+        android:name="com.yudistudios.foodland.ui.activities.main.fragments.AddCreditCardFragment"
+        android:label="fragment_add_credit_card"
+        tools:layout="@layout/fragment_add_credit_card" />
+</navigation>

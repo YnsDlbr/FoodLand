@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "70372367838",
+    "firebase_url": "https://food-ordering-e04ed-default-rtdb.firebaseio.com",
+    "project_id": "food-ordering-e04ed",
+    "storage_bucket": "food-ordering-e04ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70372367838:android:412314ee8df1826671514f",
+        "android_client_info": {
+          "package_name": "com.yudistudios.foodland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70372367838-36loncje5lpdn27o1tovqu2n2fa70q4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yudistudios.foodland",
+            "certificate_hash": "6bc00715471381514f3bc6792819ec778d8c5fd9"
+          }
+        },
+        {
+          "client_id": "70372367838-add7mgdar0238qivh8hg9ngtvbjuee13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbvJg1Gc4_uiY00kkGb3eCkiXu-L1p-sg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70372367838-add7mgdar0238qivh8hg9ngtvbjuee13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
